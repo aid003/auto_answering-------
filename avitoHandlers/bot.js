@@ -64,6 +64,7 @@ export async function botAvito() {
       const message = await chekIdAdvForAnswer(chat.context.value.id);
 
       await sendMessage(process.env.USER_ID, chat.id, currentToken, message);
+        
       await sleep(2000);
 
       await sendMessage(
